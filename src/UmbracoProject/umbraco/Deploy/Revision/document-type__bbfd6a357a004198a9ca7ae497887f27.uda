@@ -19,6 +19,13 @@
       "Alias": "header",
       "PropertyTypes": [
         {
+          "Key": "05837cb2-8852-4945-ad41-9b230b2f9536",
+          "Alias": "highlightText",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "Highlight Text",
+          "SortOrder": 1
+        },
+        {
           "Key": "32fe7c89-67a2-4547-8272-0e46c58cce03",
           "Alias": "companyName",
           "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
