@@ -1,0 +1,27 @@
+{
+  "Name": "Text Page",
+  "Alias": "textPage",
+  "DefaultTemplate": "umb://template/6f006f1aedc04707b8168b003fbd7fbb",
+  "AllowedTemplates": [
+    "umb://template/6f006f1aedc04707b8168b003fbd7fbb"
+  ],
+  "HistoryCleanup": {},
+  "Icon": "icon-page-add color-yellow",
+  "Thumbnail": "folder.png",
+  "Permissions": {
+    "AllowedChildContentTypes": []
+  },
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/b524aed5e5954dd198e95093ae1c8555",
+  "Dependencies": [
+    {
+      "Udi": "umb://template/6f006f1aedc04707b8168b003fbd7fbb",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "16.0.0"
+}
