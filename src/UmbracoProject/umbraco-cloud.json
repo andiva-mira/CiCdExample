@@ -1,7 +1,18 @@
 {
   "Deploy": {
     "Project": {
-      "Workspaces": []
+      "Name": "miras patient kitten",
+      "Alias": "miras-patient-kitten",
+      "Id": "d92019e0-7ffb-441e-b529-6ecd06bd9ec6",
+      "TrialExpireDate": "2025-09-13T13:24:42.0000000",
+      "Workspaces": [
+        {
+          "Id": "5fd702cc-b856-4765-ac40-859f2f8a251e",
+          "Name": "Live",
+          "Type": "live",
+          "Url": "https://miras-patient-kitten.euwest01.umbraco.io"
+        }
+      ]
     },
     "Settings": {}
   },
