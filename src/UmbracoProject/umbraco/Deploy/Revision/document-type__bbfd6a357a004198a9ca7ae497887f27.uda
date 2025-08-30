@@ -32,6 +32,20 @@
           "Name": "Company Name"
         }
       ]
+    },
+    {
+      "Key": "bf3a9232-a0dc-4fcb-a328-ae22458283cb",
+      "Name": "Footer",
+      "SortOrder": 1,
+      "Alias": "footer",
+      "PropertyTypes": [
+        {
+          "Key": "1aca1059-cb91-4df7-8e29-2be7e7cee583",
+          "Alias": "companyAddress",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Name": "Company Address"
+        }
+      ]
     }
   ],
   "PropertyTypes": [],
@@ -39,6 +53,10 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
       "Ordering": true
     },
     {
