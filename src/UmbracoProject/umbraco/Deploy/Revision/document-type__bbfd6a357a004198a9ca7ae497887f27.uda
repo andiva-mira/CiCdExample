@@ -44,6 +44,13 @@
           "Alias": "companyAddress",
           "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
           "Name": "Company Address"
+        },
+        {
+          "Key": "f3394d88-3a62-46d2-aaf6-a5bfaaa11d7e",
+          "Alias": "companyPhone",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "Company Phone",
+          "SortOrder": 1
         }
       ]
     }
