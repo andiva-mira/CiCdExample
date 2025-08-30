@@ -9,7 +9,9 @@
   "Icon": "icon-page-add color-yellow",
   "Thumbnail": "folder.png",
   "Permissions": {
-    "AllowedChildContentTypes": []
+    "AllowedChildContentTypes": [
+      "umb://document-type/b524aed5e5954dd198e95093ae1c8555"
+    ]
   },
   "CompositionContentTypes": [],
   "PropertyGroups": [
@@ -33,6 +35,10 @@
     {
       "Udi": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
       "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/b524aed5e5954dd198e95093ae1c8555",
+      "Mode": "Exist"
     },
     {
       "Udi": "umb://template/6f006f1aedc04707b8168b003fbd7fbb",
