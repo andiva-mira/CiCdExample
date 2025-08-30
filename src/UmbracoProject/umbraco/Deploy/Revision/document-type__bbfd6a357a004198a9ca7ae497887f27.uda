@@ -9,7 +9,10 @@
   "Icon": "icon-home color-yellow",
   "Thumbnail": "folder.png",
   "Permissions": {
-    "AllowedChildContentTypes": []
+    "AllowedAtRoot": true,
+    "AllowedChildContentTypes": [
+      "umb://document-type/b524aed5e5954dd198e95093ae1c8555"
+    ]
   },
   "CompositionContentTypes": [],
   "PropertyGroups": [
@@ -65,6 +68,10 @@
     {
       "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
       "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/b524aed5e5954dd198e95093ae1c8555",
+      "Mode": "Exist"
     },
     {
       "Udi": "umb://template/1a40e07ecaa64665a033c4a081d6155b",
