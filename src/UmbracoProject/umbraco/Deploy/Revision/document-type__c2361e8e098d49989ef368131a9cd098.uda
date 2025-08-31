@@ -9,7 +9,9 @@
   "Icon": "icon-folder color-yellow",
   "Thumbnail": "folder.png",
   "Permissions": {
-    "AllowedChildContentTypes": []
+    "AllowedChildContentTypes": [
+      "umb://document-type/1b12bc497ab644f48ead79f13f1de9f9"
+    ]
   },
   "ListView": "c0808dd3-8133-4e4b-8ce8-e2bea84a96a4",
   "CompositionContentTypes": [],
@@ -19,6 +21,10 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type/c0808dd381334e4b8ce8e2bea84a96a4",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/1b12bc497ab644f48ead79f13f1de9f9",
       "Mode": "Exist"
     },
     {
