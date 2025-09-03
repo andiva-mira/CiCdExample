@@ -3,7 +3,7 @@
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
 
 @{
-	Layout = "Master.cshtml";
+	Layout = "master.cshtml";
 }
 
 <div class="container-md">
@@ -11,6 +11,27 @@
         <h1 class="title-lg mb-10">@Model.Value("title")</h1>
         <h2 class="title-xs mb-60">@Model.Value("subtitle")</h2>
         @Model.Value("description")
+		<div class="btn-wrapper">
+			<a href="@Model.Link.Url">@Model.Link.Name</a>
+		</div>
     </div>
     @await Html.PartialAsync("sitemapList")
+	@* @{
+		var link = Model.Value<IEnumerable<Link>>("link");
+		@if (link?.Any() ?? false)
+		{
+			@foreach (var item in link)
+			{
+				if (link != null && !string.IsNullOrWhiteSpace(link.Url))
+				{
+						<a href="@link.Url" target="@(link.Target)" title="@link.Name" class="btn">
+							@link.Name
+						</a>
+
+				}
+
+			}
+		}
+	} *@
+
 </div>

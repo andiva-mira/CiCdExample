@@ -1,0 +1,8 @@
+{
+  "Name": "Custom Data Types",
+  "ContainedObjectType": "30a2a501-1978-4ddb-a57b-f7efed43ba3c",
+  "Udi": "umb://data-type-container/6b771c6eb3cd4608b74e0597e497b3d6",
+  "Dependencies": [],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContainerArtifact",
+  "__version": "16.0.0"
+}
