@@ -1066,3 +1066,118 @@ p.review-text{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+
+.nav_sitemap {
+  background: none;
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+.nav_sitemap ul, .nav_sitemap li, .nav_sitemap a {
+  display: block;
+}
+.nav_sitemap > ul > li > a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+}
+.nav_sitemap ul {
+  position: relative;
+  padding: 0;
+}
+.nav_sitemap ul::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 23px;
+  bottom: 23px;
+  left: -20px;
+  width: 1px;
+  height: calc(100% - 46px);
+  background: #d4d4d4;
+}
+.nav_sitemap ul li {
+  margin: 0 0 0.5rem 0;
+  background-color: #fff;
+  border-left: 0.4rem solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+  min-height: 46px;
+  position: relative;
+}
+.nav_sitemap ul li::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: -24px;
+  width: 20px;
+  height: 1px;
+  background: #d4d4d4;
+}
+.nav_sitemap ul li:last-child::before {
+  top: auto;
+  bottom: 23px;
+}
+.nav_sitemap ul a {
+  padding: 0.7rem 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  color: #212121;
+  font-size: 0.95rem;
+  position: relative;
+}
+.nav_sitemap ul ul {
+  margin: 0 0 5px;
+  position: relative;
+}
+.nav_sitemap ul ul::before {
+  left: 0;
+}
+.nav_sitemap ul ul li {
+  margin-left: 20px;
+  background-color: #fbfbfb;
+}
+.nav_sitemap ul ul a {
+  color: rgba(33, 33, 33, 0.95);
+  font-weight: 500;
+  text-align: left;
+}
+.nav_sitemap ul ul ul {
+  position: relative;
+}
+.nav_sitemap ul ul ul::before {
+  left: 20px;
+}
+.nav_sitemap ul ul ul li {
+  margin-left: 40px;
+}
+.nav_sitemap ul ul ul ul {
+  position: relative;
+}
+.nav_sitemap ul ul ul ul::before {
+  left: 20px;
+}
+.nav_sitemap ul ul ul ul li {
+  margin-left: 60px;
+  background-color: #fbfbfb;
+}
+.nav_sitemap a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+.nav_sitemap a:hover::after {
+  transform: scaleX(100%);
+}
+
+.section-heading {
+    margin-top: 114px!important;
+    margin-bottom: 40px!important;
+}
+
+.secondarypage .navbar {
+    background: linear-gradient(to right, #1b264f, #3e4c9f);
+}

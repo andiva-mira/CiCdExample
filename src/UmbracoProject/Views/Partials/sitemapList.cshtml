@@ -1,0 +1,94 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Sitemap>
+@using Umbraco.Cms.Core
+@using Umbraco.Cms.Core.Models.PublishedContent
+@using Umbraco.Cms.Core.Routing
+@using Umbraco.Extensions
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels
+
+@inject Umbraco.Cms.Core.Web.IUmbracoContextAccessor umbracoContextAccessor;
+@inject Umbraco.Cms.Core.Web.IUmbracoContextFactory UmbracoContextFactory
+
+@inject IPublishedValueFallback PublishedValueFallback
+@inject IPublishedUrlProvider PublishedUrlProvider
+
+
+@{
+    // var homePage = Model.AncestorOrSelf<ContentModels.Home>();
+	var selection = Model.Root().Children.Where(x => !x.Value<bool>("hideOnSitemapPage")).ToArray();
+}
+
+
+@if (selection?.Length > 0)
+{
+var naviLevel = selection[0].Level;
+
+<nav class="nav_sitemap content-el lp-container">
+	<ul class="menu-ul" data-nav-level="level-@(naviLevel)">
+		<li class="@(Model.IsAncestorOrSelf(Model) ? "current" : null)">
+            <a href="@Model.Root().Url(PublishedUrlProvider)">@Model.Root().Name</a>
+        </li>
+        @foreach (var item in selection)
+        {
+		<li class="@(item.IsAncestorOrSelf(Model) ? "current" : null)">
+		@{
+			var externalLink = item.Value<string>("externalDomain");
+			var pageLink = !(string.IsNullOrWhiteSpace(externalLink)) ?  externalLink : item.Url(PublishedUrlProvider);
+		}
+			<a href="@pageLink">@item.Name</a>
+			
+			@* if this child page has any children, where the property hideOnSitemapPage is not True *@
+			@{
+				var children = item.Children.Where(x => !x.Value<bool>("hideOnSitemapPage")).ToArray();
+				if (children.Length > 0)
+				{
+					@* Call a local method to display the children *@
+					ChildPages(children);
+				}
+			}
+
+			@* add Aro BE Offers as submenu to Aro BE Offers *@
+			@if (item.GetTemplateAlias() == "AroBEOffers") {
+				@await Component.InvokeAsync("AroBEOffersLinks")
+			}			
+		</li>
+        }
+	</ul>
+</nav>
+
+}
+
+@{
+    void ChildPages(IPublishedContent[] selection)
+    {
+        //Ensure that we have a collection of pages
+        if (selection.Length > 0)
+        {
+            // Get the first page in pages and get the level
+            var naviLevel = selection[0].Level;
+
+            // Add in level for a CSS hook
+            <ul data-nav-level="level-@(naviLevel)">
+                @foreach (var item in selection)
+                {
+                    <li>
+						@{
+							var externalLink = item.Value<string>("externalDomain");
+							var pageLink = !(string.IsNullOrWhiteSpace(externalLink)) ?  externalLink : item.Url(PublishedUrlProvider);
+						}
+                        <a href="@pageLink">@item.Name</a>
+
+                        @* if the page has any children, where the property hideOnSitemapPage is not True *@
+                        @{
+                            var children = item.Children.Where(x => !x.Value<bool>("hideOnSitemapPage")).ToArray();
+                            if (children.Length > 0)
+                            {
+                                @* Recurse and call the ChildPages method to display the children *@
+                                ChildPages(children);
+                            }
+                        }						
+                    </li>
+                }
+            </ul>
+        }
+    }
+}
