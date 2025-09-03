@@ -16,7 +16,7 @@ using Umbraco.Cms.Infrastructure.ModelsBuilder;
 using Umbraco.Cms.Core;
 using Umbraco.Extensions;
 
-namespace UmbracoProject.Models.Generated
+namespace Umbraco.Cms.Web.Common.PublishedModels
 {
 	/// <summary>File</summary>
 	[PublishedModel("File")]
