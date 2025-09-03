@@ -1,0 +1,16 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Sitemap>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+
+@{
+	Layout = "Master.cshtml";
+}
+
+<div class="container-md">
+    <div class="section-heading content-sm m-auto text-center">
+        <h1 class="title-lg mb-10">@Model.Value("title")</h1>
+        <h2 class="title-xs mb-60">@Model.Value("subtitle")</h2>
+        @Model.Value("description")
+    </div>
+    @await Html.PartialAsync("sitemapList")
+</div>

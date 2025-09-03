@@ -1,0 +1,21 @@
+{
+  "Name": "Sitemap",
+  "Alias": "Sitemap",
+  "File": "umb://template-file/Sitemap.cshtml",
+  "Master": "umb://template/9ac92deb39824e58a0ba588ce1e29383",
+  "Udi": "umb://template/2800527f51974e3ab8a1e02e2c05bd8c",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/Sitemap.cshtml",
+      "Ordering": true,
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://template/9ac92deb39824e58a0ba588ce1e29383",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "16.0.0"
+}
