@@ -65,7 +65,7 @@
           "Alias": "isActive",
           "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
           "Name": "Is Active",
-          "SortOrder": 5
+          "SortOrder": 6
         }
       ]
     }
