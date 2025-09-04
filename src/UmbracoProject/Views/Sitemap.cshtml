@@ -11,6 +11,7 @@
         <h1 class="title-lg mb-10">@Model.Value("title")</h1>
         <h2 class="title-xs mb-60">@Model.Value("subtitle")</h2>
         @Model.Value("description")
+		<img loading="lazy" src="@(Url.GetCropUrl(@Model.Image, width: 400, height: 400))" alt="@Model?.Image?.Name" />                            
     </div>
     @await Html.PartialAsync("sitemapList")
 </div>
