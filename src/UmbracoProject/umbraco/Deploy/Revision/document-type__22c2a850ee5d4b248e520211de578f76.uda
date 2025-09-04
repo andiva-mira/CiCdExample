@@ -61,11 +61,18 @@
           "SortOrder": 2
         },
         {
+          "Key": "fc9c5589-af4f-43c4-93d7-abb4c822e842",
+          "Alias": "link",
+          "DataType": "umb://data-type/46d963cc6b034044a35bee6401a631dd",
+          "Name": "Link",
+          "SortOrder": 6
+        },
+        {
           "Key": "fd0b276f-0736-4b0c-a763-8288326ae47f",
           "Alias": "isActive",
           "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
           "Name": "Is Active",
-          "SortOrder": 6
+          "SortOrder": 7
         }
       ]
     }
@@ -75,6 +82,10 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/46d963cc6b034044a35bee6401a631dd",
       "Ordering": true
     },
     {
