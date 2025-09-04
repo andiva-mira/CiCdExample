@@ -3,15 +3,33 @@
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
 
 @{
-	Layout = "Master.cshtml";
+	Layout = "master.cshtml";
 }
 
 <div class="container-md">
-    <div class="section-heading content-sm m-auto text-center">
-        <h1 class="title-lg mb-10">@Model.Value("title")</h1>
-        <h2 class="title-xs mb-60">@Model.Value("subtitle")</h2>
-        @Model.Value("description")
-		<img loading="lazy" src="@(Url.GetCropUrl(@Model.Image, width: 400, height: 400))" alt="@Model?.Image?.Name" />                            
-    </div>
-    @await Html.PartialAsync("sitemapList")
+	<div class="section-heading content-sm m-auto text-center">
+		<h1 class="title-lg mb-10">@Model.Value("title")</h1>
+		<h2 class="title-xs mb-60">@Model.Value("subtitle")</h2>
+		@Model.Value("description")
+		<div class="btn-wrapper">
+			@{
+				var links = Model.Buttons;
+				if (links?.Any() ?? false)
+				{
+					@foreach (var link in links)
+					{
+						if (link != null && !string.IsNullOrWhiteSpace(link.Url))
+						{
+							<a href="@link.Url" target="@(link.Target)" title="@link.Name" class="btn">
+								@link.Name
+							</a>
+
+						}
+
+					}
+				}
+			}
+		</div>
+	</div>
+	@await Html.PartialAsync("sitemapList")
 </div>

@@ -37,14 +37,49 @@
           "Alias": "description",
           "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
           "Name": "Description",
+          "SortOrder": 3
+        },
+        {
+          "Key": "71cbd422-3760-469b-8961-adcb4980f813",
+          "Alias": "testField",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Name": "Test Field",
+          "SortOrder": 4
+        },
+        {
+          "Key": "9091ae30-3f54-466a-b794-ffde952a12e8",
+          "Alias": "buttons",
+          "DataType": "umb://data-type/b4e3535a175347e28568602cf8cfee6f",
+          "Name": "Buttons",
+          "SortOrder": 5
+        },
+        {
+          "Key": "94104588-4c1e-4700-ae40-0744b83f37b1",
+          "Alias": "summary",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Name": "Summary",
           "SortOrder": 2
         },
         {
-          "Key": "7a319bf0-f73b-4882-830b-1ee5d1826f92",
-          "Alias": "image",
-          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
-          "Name": "Image",
-          "SortOrder": 3
+          "Key": "cfd12c68-ba08-4725-b8cd-4e47dde07910",
+          "Alias": "anotherTestField",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "AnotherTestField",
+          "SortOrder": 7
+        },
+        {
+          "Key": "fc9c5589-af4f-43c4-93d7-abb4c822e842",
+          "Alias": "link",
+          "DataType": "umb://data-type/46d963cc6b034044a35bee6401a631dd",
+          "Name": "Link",
+          "SortOrder": 6
+        },
+        {
+          "Key": "fd0b276f-0736-4b0c-a763-8288326ae47f",
+          "Alias": "isActive",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Name": "Is Active",
+          "SortOrder": 8
         }
       ]
     }
@@ -57,7 +92,19 @@
       "Ordering": true
     },
     {
-      "Udi": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+      "Udi": "umb://data-type/46d963cc6b034044a35bee6401a631dd",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/b4e3535a175347e28568602cf8cfee6f",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
       "Ordering": true
     },
     {
