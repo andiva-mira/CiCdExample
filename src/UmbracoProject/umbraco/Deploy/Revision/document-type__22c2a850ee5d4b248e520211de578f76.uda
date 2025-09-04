@@ -68,6 +68,13 @@
           "SortOrder": 6
         },
         {
+          "Key": "cfd12c68-ba08-4725-b8cd-4e47dde07910",
+          "Alias": "anotherTestField",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "AnotherTestField",
+          "SortOrder": 7
+        },
+        {
           "Key": "fd0b276f-0736-4b0c-a763-8288326ae47f",
           "Alias": "isActive",
           "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
