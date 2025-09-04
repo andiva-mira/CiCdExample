@@ -40,10 +40,10 @@
           "SortOrder": 3
         },
         {
-          "Key": "7587df8e-5069-4055-b63c-6ebb47f79b47",
-          "Alias": "link",
-          "DataType": "umb://data-type/46d963cc6b034044a35bee6401a631dd",
-          "Name": "Link",
+          "Key": "71cbd422-3760-469b-8961-adcb4980f813",
+          "Alias": "testField",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Name": "Test Field",
           "SortOrder": 4
         },
         {
@@ -61,10 +61,6 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-      "Ordering": true
-    },
-    {
-      "Udi": "umb://data-type/46d963cc6b034044a35bee6401a631dd",
       "Ordering": true
     },
     {
