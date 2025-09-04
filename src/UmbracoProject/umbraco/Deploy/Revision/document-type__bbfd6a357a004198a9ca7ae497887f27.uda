@@ -39,6 +39,20 @@
       ]
     },
     {
+      "Key": "7a892c1b-3ae1-4ab3-b139-60289cfb2de9",
+      "Name": "Body",
+      "SortOrder": 2,
+      "Alias": "body",
+      "PropertyTypes": [
+        {
+          "Key": "4eb0389f-de0b-43bb-a352-5cbd7b1afc18",
+          "Alias": "mainText",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Name": "Main Text"
+        }
+      ]
+    },
+    {
       "Key": "bf3a9232-a0dc-4fcb-a328-ae22458283cb",
       "Name": "Footer",
       "SortOrder": 1,
@@ -69,6 +83,10 @@
     },
     {
       "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
       "Ordering": true
     },
     {

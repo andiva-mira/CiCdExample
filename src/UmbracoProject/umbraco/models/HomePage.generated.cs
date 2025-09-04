@@ -80,5 +80,13 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("highlightText")]
 		public virtual string HighlightText => this.Value<string>(_publishedValueFallback, "highlightText");
+
+		///<summary>
+		/// Main Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.1.1+7e82c25")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("mainText")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString MainText => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "mainText");
 	}
 }
