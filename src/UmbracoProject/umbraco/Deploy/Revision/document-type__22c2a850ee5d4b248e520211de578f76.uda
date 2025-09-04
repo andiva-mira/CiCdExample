@@ -37,14 +37,21 @@
           "Alias": "description",
           "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
           "Name": "Description",
-          "SortOrder": 2
+          "SortOrder": 3
         },
         {
           "Key": "7587df8e-5069-4055-b63c-6ebb47f79b47",
           "Alias": "link",
           "DataType": "umb://data-type/46d963cc6b034044a35bee6401a631dd",
           "Name": "Link",
-          "SortOrder": 3
+          "SortOrder": 4
+        },
+        {
+          "Key": "94104588-4c1e-4700-ae40-0744b83f37b1",
+          "Alias": "summary",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Name": "Summary",
+          "SortOrder": 2
         }
       ]
     }
@@ -58,6 +65,10 @@
     },
     {
       "Udi": "umb://data-type/46d963cc6b034044a35bee6401a631dd",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
       "Ordering": true
     },
     {
