@@ -31,6 +31,13 @@
           "SortOrder": 1
         },
         {
+          "Key": "1567b9c2-0f13-47a5-8e27-b6337b0564c1",
+          "Alias": "hideHighlightText",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Name": "Hide Highlight Text",
+          "SortOrder": 2
+        },
+        {
           "Key": "32fe7c89-67a2-4547-8272-0e46c58cce03",
           "Alias": "companyName",
           "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
@@ -65,6 +72,10 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
       "Ordering": true
     },
     {

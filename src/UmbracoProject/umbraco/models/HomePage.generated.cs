@@ -74,6 +74,13 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string CompanyPhone => this.Value<string>(_publishedValueFallback, "companyPhone");
 
 		///<summary>
+		/// Hide Highlight Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.1.1+7e82c25")]
+		[ImplementPropertyType("hideHighlightText")]
+		public virtual bool HideHighlightText => this.Value<bool>(_publishedValueFallback, "hideHighlightText");
+
+		///<summary>
 		/// Highlight Text
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.1.1+7e82c25")]

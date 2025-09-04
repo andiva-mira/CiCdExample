@@ -9,9 +9,11 @@
 
 <div class="jumbotron d-flex align-items-center">
     <div class="container text-center">
-        <h1 class="display-1 mb-4">
-            @Model.HighlightText
-        </h1>
+        @if (Model.HideHighlightText == false) {
+            <h1 class="display-1 mb-4">
+                @Model.HighlightText
+            </h1>
+        }
 
     </div>
 </div>
