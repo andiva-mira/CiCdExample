@@ -47,6 +47,13 @@
           "SortOrder": 4
         },
         {
+          "Key": "9091ae30-3f54-466a-b794-ffde952a12e8",
+          "Alias": "buttons",
+          "DataType": "umb://data-type/b4e3535a175347e28568602cf8cfee6f",
+          "Name": "Buttons",
+          "SortOrder": 5
+        },
+        {
           "Key": "94104588-4c1e-4700-ae40-0744b83f37b1",
           "Alias": "summary",
           "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
@@ -61,6 +68,10 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/b4e3535a175347e28568602cf8cfee6f",
       "Ordering": true
     },
     {
