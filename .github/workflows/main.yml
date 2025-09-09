@@ -1,8 +1,12 @@
 name: pipeline
 
-# Trigger when committing to main branch
+# Trigger on push to master and selected pull request events targeting master
 on:
   push:
+    branches:
+      - master
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
     branches:
       - master
 
@@ -15,9 +19,10 @@ jobs:
       projectId: ${{ secrets.PROJECT_ID }}
       umbracoCloudApiKey: ${{ secrets.UMBRACO_CLOUD_API_KEY }}
 
-  # Package and Deploy to Umbraco Cloud
+  # Package and Deploy to Umbraco Cloud (only on push)
   cloud-deployment:
     name: "Deploy to Cloud"
+    if: github.event_name == 'push'
     needs: cloud-sync
     uses: ./.github/workflows/cloud-deployment.yml
     with:
