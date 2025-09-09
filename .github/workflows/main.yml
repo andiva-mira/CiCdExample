@@ -21,6 +21,7 @@ jobs:
   # Package and Deploy to Umbraco Cloud (only on push)
   cloud-deployment:
     name: "Deploy to Cloud"
+    if: github.event_name == 'push'
     needs: cloud-sync
     uses: ./.github/workflows/cloud-deployment.yml
     with:
